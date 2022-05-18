@@ -1,0 +1,91 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+
+:root {
+   --darkred: rgb(1, 20, 110);
+   --text-color: #fff;
+   /* Secondary */
+   --darkgrey: #4c4c4c;
+   --lightgrey: rgba(216, 211, 211, 0.8);
+}
+
+@font-face {
+   font-display: swap;
+   font-family: "theme-icons";
+   src: url("../iconPack/theme-icons.woff") format("woff");
+   font-weight: 400;
+}
+
+@font-face {
+   font-display: swap;
+   font-family: "FontAwesome";
+   src: url("../iconPack/fontawesome-webfont.woff") format("woff");
+   font-weight: 400;
+}
+
+.container {
+   width: 90%;
+   max-width: 1350px;
+   padding: 2rem;
+   margin: auto;
+   overflow: hidden;
+}
+
+.flex {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: 1fr;
+}
+
+.card {
+   border: 1px solid var(--lightgrey);
+   box-shadow: 0px 3px 10px solid var(--darkgrey);
+   padding: 1.5rem;
+}
+
+.highlight {
+   color: var(--darkred);
+}
+
+* ::selection {
+   background: #f11f;
+}
+
+.slideUp {
+   transform: translateY(200px);
+   transition: all 0.5s ease;
+   opacity: 0;
+}
+
+.slideUp.show {
+   transform: translateY(0px);
+   transition: all 1.2s ease;
+   opacity: 1;
+}
+
+.slideRight {
+   transform: translateX(200px);
+   transition: all 0.5s ease;
+   opacity: 0;
+}
+
+.slideRight.show {
+   transform: translateX(0px);
+   transition: all 1.2s ease;
+   opacity: 1;
+}
+
+@keyframes zoom {
+   from {
+      transform: scale(0.98);
+   }
+   to {
+      transform: scale(1.1);
+   }
+}

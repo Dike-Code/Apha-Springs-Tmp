@@ -1,0 +1,135 @@
+/** @format */
+
+/* About-heading */
+.about-header {
+   width: 100%;
+   padding: 0;
+}
+
+.about-header .logo img {
+   width: 150px;
+}
+
+.about-header .navbar li:hover,
+.serviceHero .navbar li:hover {
+   background: var(--darkred);
+   border: 1px solid #fff;
+}
+
+.about-header .navbar li:hover a,
+.serviceHero .navbar li:hover a {
+   color: var(--text-color);
+}
+
+.about-header .navbar.fixed {
+   background: var(--text-color);
+   padding: 0;
+   height: 70px;
+}
+
+.about-header .navbar.fixed .flex {
+   height: 100%;
+}
+
+.about-header .navbar.fixed li:hover,
+.serviceHero .navbar.fixed li:hover {
+   background: var(--darkred);
+   border: 1px solid #fff;
+}
+
+.about-header .navbar.fixed li:hover a,
+.serviceHero .navbar.fixed li:hover a {
+   color: var(--text-color);
+}
+
+.about-header .navbar a {
+   color: var(--darkgrey);
+}
+
+/* About-Hero */
+.aboutHero {
+   width: 100%;
+   height: 350px;
+   background: url("../images/about.jpg") no-repeat center center/cover;
+   transition: 0.5s ease;
+   opacity: 0.399;
+}
+.serviceHero {
+   width: 100%;
+   height: 350px;
+   background: url("../images/ban_fall_over.png") no-repeat center center/cover;
+   transition: 0.5s ease;
+   opacity: 0.399;
+}
+
+.aboutHero .flex,
+.serviceHero .flex {
+   align-items: center;
+   height: 100%;
+}
+
+.aboutHero h1,
+.serviceHero h1 {
+   font-size: 3rem;
+   letter-spacing: 10px;
+   color: var(--text-color);
+}
+
+.relative-links {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.relative-links a {
+   font-weight: 200;
+   margin: auto 20px;
+   color: var(--darkgrey);
+   transition: 0.5s ease;
+}
+.relative-links a:hover {
+   margin: auto 20px;
+   color: var(--darkred);
+}
+
+.mv {
+   background: var(--text-color);
+   height: 500px;
+   display: flex;
+}
+
+.mv .flex {
+   justify-content: space-between;
+   gap: 40px;
+}
+
+.mv .mv-content {
+   max-width: 600px;
+}
+
+.mvImg {
+   width: 500px;
+}
+
+.about-team {
+   background: var(--lightgrey);
+}
+
+.about-team .team-content {
+   width: 100%;
+   margin: auto;
+   background: var(--text-color);
+   padding: 2rem;
+}
+
+.service-team .team-content {
+   width: 100%;
+   margin: auto;
+   background: var(--text-color);
+   padding: 2rem;
+}
+
+.about-team h1 {
+   text-align: left;
+}
