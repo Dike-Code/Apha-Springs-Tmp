@@ -109,7 +109,7 @@
 }
 
 .mvImg {
-   width: 500px;
+   max-width: 600px;
 }
 
 .about-team {
@@ -126,7 +126,7 @@
 .service-team .team-content {
    width: 100%;
    margin: auto;
-   background: var(--text-color);
+   background: var(--lightgrey);
    padding: 2rem;
 }
 

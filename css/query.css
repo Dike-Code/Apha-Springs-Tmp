@@ -9,6 +9,11 @@
       font-size: 16px;
    }
 
+   .container {
+      width: 100%;
+      padding: 20px;
+   }
+
    .address .container {
       display: none;
    }
@@ -19,6 +24,10 @@
    .slides .content h2 {
       font-size: 2rem;
    }
+
+   .appHero h1 {
+      font-size: 1.5rem;
+   }
 }
 
 @media (max-width: 968px) {
@@ -26,6 +35,23 @@
       position: relative;
       z-index: 999;
       max-width: 30%;
+   }
+
+   .about-header .logo img {
+      width: 100px;
+      position: relative;
+      z-index: 999;
+   }
+
+   .prevBtn,
+   .nextBtn {
+      width: 30px;
+      height: 30px;
+   }
+
+   .prevIcon::before,
+   .nextIcon::before {
+      font: normal 15px "theme-icons";
    }
 
    .toggle {
@@ -43,9 +69,16 @@
       background: var(--darkgrey);
       display: block;
       width: 30px;
-      height: 4px;
-      margin: 5px auto;
+      height: 2px;
+      margin: 6px auto;
+      transition: 0.5s ease;
    }
+
+   .toggle .bar.toggleW {
+      background: #fff;
+      width: 40px;
+   }
+
    .slides .content h1 {
       font-size: 2.5rem;
    }
@@ -75,11 +108,32 @@
 
    .navbar ul {
       flex-flow: column;
+      height: 100%;
+   }
+
+   .navbar ul li a {
+      font-size: 1.5rem;
+   }
+
+   .about-header .navbar a {
+      color: #fff;
+   }
+
+   .navbar.fixed .flex {
+      width: 90%;
+      padding: 0 20px;
+   }
+
+   .about-header .navbar.fixed .flex {
+      width: 90%;
+      padding: 0 20px;
+      height: 100%;
    }
 
    .newsletter .flex,
    .counterBox .flex,
-   .footLinks .flex {
+   .footLinks .flex,
+   .cv-items {
       justify-content: center;
       align-items: center;
       flex-flow: column;
@@ -102,6 +156,10 @@
       grid-template-columns: 1fr;
       justify-content: center;
       align-items: center;
+   }
+
+   .counterBox::before {
+      left: 39%;
    }
 
    .foot {
@@ -129,18 +187,24 @@
       order: 1;
    }
 
+   .mvImg,
+   .aboutImg,
+   .home-contact-form textarea {
+      max-width: 100%;
+   }
+
    .accordin .contentBox.active .content {
-      height: 200px;
+      height: 250px;
    }
 }
 
 @media (max-width: 768px) {
    .slides .content h1 {
       max-width: 100%;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
    }
 
    .slides .content h2 {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
    }
 }

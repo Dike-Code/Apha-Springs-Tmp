@@ -93,9 +93,8 @@ section {
    width: 100%;
    height: 100vh;
    margin: auto;
-   /* position: relative; */
-   /* overflow: hidden; */
    padding: 0;
+   overflow: hidden;
 }
 
 .header .logo {
@@ -115,13 +114,30 @@ section {
    background: rgba(255, 255, 255, 0.1);
    width: 100%;
    padding: 0.5rem 0;
-   z-index: 999;
+   z-index: 99;
    transition: 0.5s ease;
    transform: scale(1);
 }
 
+.navbar ul li {
+   display: flex;
+   align-items: center;
+   height: 80px;
+   padding: 2rem;
+}
+
+.navbar ul li a:hover {
+   color: var(--darkred);
+}
+
 .navbar li:hover {
    background: var(--text-color);
+}
+
+.navbar ul li a {
+   font-size: 1.1rem;
+   color: var(--text-color);
+   transition: all 0.4s ease-in-out;
 }
 
 .navbar li:hover a {
@@ -134,7 +150,7 @@ section {
    top: 0;
    left: 0;
    width: 100%;
-   padding: 0.1rem 0;
+   padding: 0.555rem 0;
    transition: 0.5s ease;
    transform: scale(1.1);
    background: var(--darkred);
@@ -171,24 +187,6 @@ section {
    position: relative;
 }
 
-.navbar ul li {
-   display: flex;
-   align-items: center;
-   height: 80px;
-   padding: 2rem;
-}
-
-.navbar ul li a {
-   font-size: 1.1rem;
-   color: var(--text-color);
-   transition: all 0.4s ease-in-out;
-}
-
-.navbar ul li a:hover {
-   font-size: 1.1rem;
-   color: var(--darkred);
-}
-
 .toggle {
    display: none;
 }
@@ -210,8 +208,9 @@ section {
 .slides .content {
    position: relative;
    top: 10%;
+   width: 100%;
    color: #fff;
-   padding: 10rem 2rem;
+   padding: 10rem 0;
 }
 
 .slides .content h1 {
@@ -558,33 +557,6 @@ section {
    font-size: 2rem;
 }
 
-/* .pros {
-   background: var(--lightgrey);
-}
-.pros .pros-content {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 50px;
-}
-
-.prosImg {
-   max-width: 100%;
-}
-
-.prosImg Img {
-   width: 100%;
-}
-
-.pros .proslist h1 {
-   text-transform: uppercase;
-   font-size: 2rem;
-   margin-top: 0;
-}
-
-.pros .proslist ul {
-   list-style-image: url("../images/arrow.png");
-} */
-
 /* cv styling */
 .cv {
    background: var(--darkred);
@@ -636,54 +608,21 @@ section {
    color: var(--darkgrey);
 }
 
-.icon-male::before {
-   content: "\f21b";
+.cv-icons {
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 50px;
+   height: 50px;
    color: var(--darkred);
-   width: 60px;
-   height: 60px;
    margin: 15px 10px 15px 0;
+   padding: 1rem;
    border: 1px solid var(--darkred);
    border-radius: 50%;
-   font: normal 20px "FontAwesome", "theme-icons";
-   overflow: hidden;
    transition: 0.2s ease;
 }
-.uni-icon::before {
-   content: "\f19c";
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: var(--darkred);
-   width: 60px;
-   height: 60px;
-   margin: 15px 10px 15px 0;
-   border: 1px solid var(--darkred);
-   border-radius: 50%;
-   font: normal 20px "FontAwesome", "theme-icons";
-   overflow: hidden;
-   transition: 0.2s ease;
-}
-.shi-icon::before {
-   content: "\f132";
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: var(--darkred);
-   width: 60px;
-   height: 60px;
-   margin: 15px 10px 15px 0;
-   border: 1px solid var(--darkred);
-   border-radius: 50%;
-   font: normal 20px "FontAwesome", "theme-icons";
-   overflow: hidden;
-   transition: 0.2s ease;
-}
-.icon-male:hover::before,
-.uni-icon:hover::before,
-.shi-icon:hover::before {
+
+.cv-icons:hover {
    background: var(--darkred);
    color: var(--text-color);
 }
@@ -697,7 +636,7 @@ section {
    content: "";
    position: absolute;
    top: -15px;
-   left: 46%;
+   left: 45.5%;
    transform: skewY(-25deg);
    transform: rotate(-45deg);
    width: 100px;
@@ -748,6 +687,46 @@ section {
    justify-content: center;
    gap: 20px;
 }
+
+.instImg .card {
+   padding: 0;
+}
+
+.inst-Img {
+   position: relative;
+}
+
+.ct-name {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 0;
+   opacity: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   color: var(--text-color);
+   background: rgba(0, 0, 0, 0.555);
+   transition: 0.5s ease;
+}
+
+.inst-img:hover .ct-name {
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   background: rgba(0, 0, 0, 0.555);
+   transition: 0.5s ease;
+}
+
+/* .ct-name:hover ::before {
+   top: 0;
+   height: 100%;
+   opacity: 1;
+} */
 
 .inst-img3 {
    grid-column: 1/3;

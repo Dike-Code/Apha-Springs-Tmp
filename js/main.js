@@ -22,11 +22,17 @@ const label2 = document.querySelector(".lab2");
 
 const mobMenu = document.querySelector(".toggle");
 
+const bar = document.querySelectorAll(".bar");
+
 const navBar = document.querySelector(".navigation");
+
 let speed = 600;
 
 mobMenu.addEventListener("click", (e) => {
    navBar.classList.toggle("show");
+   bar.forEach((bars) => {
+      bars.classList.toggle("toggleW");
+   });
 });
 
 window.addEventListener("scroll", function () {
