@@ -121,3 +121,27 @@ select {
    padding: 1rem;
    font-size: 1.1rem;
 }
+
+/* contat us */
+
+.last-page-con {
+   background: var(--darkred);
+   border-bottom: 1px solid var(--darkgrey);
+}
+
+.last-page-con .grid {
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 100px;
+   justify-content: center;
+   align-items: center;
+}
+
+.last-page-con .callUs p {
+   color: var(--text-color);
+}
+
+.last-page-con .callUs a {
+   display: inline-block;
+   color: var(--text-color);
+   margin: 20px auto;
+}
