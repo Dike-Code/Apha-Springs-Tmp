@@ -11,7 +11,7 @@
 
    .container {
       width: 100%;
-      padding: 20px;
+      padding: 40px;
    }
 
    .address .container {
@@ -27,6 +27,12 @@
 
    .appHero h1 {
       font-size: 1.5rem;
+   }
+
+   .footLogo {
+      width: 100px;
+      display: inline-block;
+      margin: auto;
    }
 }
 
@@ -70,7 +76,7 @@
       display: block;
       width: 30px;
       height: 2px;
-      margin: 6px auto;
+      margin: 8px auto;
       transition: 0.5s ease;
    }
 
@@ -112,7 +118,7 @@
    }
 
    .navbar ul li a {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
    }
 
    .about-header .navbar a {
@@ -199,6 +205,10 @@
 }
 
 @media (max-width: 768px) {
+   .container {
+      width: 100%;
+      padding: 20px;
+   }
    .slides .content h1 {
       max-width: 100%;
       font-size: 1.5rem;
