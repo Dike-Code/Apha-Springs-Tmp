@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
 
 :root {
-   --darkred: rgb(199, 195, 8);
+   --darkred: #b5b428;
    --text-color: #fff;
    /* Secondary */
    --darkgrey: #4c4c4c;
