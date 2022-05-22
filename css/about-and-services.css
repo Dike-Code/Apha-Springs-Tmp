@@ -47,6 +47,7 @@
 }
 
 .about-header .navbar .logo,
+.about-header .navbar a,
 .about-header .navbar.fixed a {
    color: var(--darkgrey);
 }
