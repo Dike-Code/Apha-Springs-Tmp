@@ -109,7 +109,12 @@
       font-size: 1.2rem;
    }
 
-   .about-header .navbar a {
+   .about-header .navbar.fixed .logo {
+      color: var(--darkgrey);
+   }
+
+   .about-header .navbar a,
+   .about-header .navbar.fixed a {
       color: #fff;
    }
 
@@ -200,19 +205,23 @@
       font-size: 1.1rem;
       color: var(--text-color);
    }
-}
 
-@media (max-width: 768px) {
-   .container {
+   .appBtn {
       width: 100%;
-      padding: 20px;
-   }
-   .slides .content h1 {
-      max-width: 100%;
-      font-size: 1.5rem;
    }
 
-   .slides .content h2 {
-      font-size: 1.1rem;
+   @media (max-width: 768px) {
+      .container {
+         width: 100%;
+         padding: 20px;
+      }
+      .slides .content h1 {
+         max-width: 100%;
+         font-size: 1.5rem;
+      }
+
+      .slides .content h2 {
+         font-size: 1.1rem;
+      }
    }
 }
