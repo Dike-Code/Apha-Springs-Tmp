@@ -98,9 +98,11 @@ section {
 }
 
 .header .logo {
-   width: 100px;
-   display: flex;
-   align-items: center;
+   display: inline-block;
+   font-family: "Ephesis", cursive;
+   font-weight: bolder;
+   font-size: 4rem;
+   color: #fff;
 }
 
 .header-container {
@@ -754,7 +756,7 @@ p {
    border-bottom: 1px solid var(--darkgrey);
 }
 .home-contact .grid {
-   grid-template-columns: 2fr 1fr;
+   grid-template-columns: 1fr 1fr;
    grid-gap: 100px;
    justify-content: center;
    align-items: center;
@@ -812,6 +814,7 @@ select:focus {
    border-radius: 2px;
    padding: 1rem;
 }
+
 .home-contact-form textarea:focus {
    background: #fff;
    outline: 0;
@@ -833,6 +836,7 @@ select:focus {
 }
 
 .callUs a {
+   display: block;
    font-size: 2rem;
    color: var(--text-color);
 }
@@ -847,8 +851,10 @@ select:focus {
 }
 
 .footLogo {
-   width: 100px;
    display: inline-block;
+   font-family: "Ephesis", cursive;
+   font-weight: bolder;
+   font-size: 4rem;
 }
 .foot .grid {
    grid-template-columns: repeat(4, 1fr);

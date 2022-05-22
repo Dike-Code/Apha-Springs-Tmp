@@ -28,23 +28,11 @@
    .appHero h1 {
       font-size: 1.5rem;
    }
-
-   .footLogo {
-      width: 100px;
-      display: inline-block;
-      margin: auto;
-   }
 }
 
 @media (max-width: 968px) {
-   .header .logo {
-      position: relative;
-      z-index: 999;
-      max-width: 30%;
-   }
-
-   .about-header .logo img {
-      width: 100px;
+   .header .logo,
+   .about-header .logo {
       position: relative;
       z-index: 999;
    }
@@ -201,6 +189,16 @@
 
    .accordin .contentBox.active .content {
       height: 250px;
+   }
+
+   .callUs {
+      text-align: center;
+   }
+
+   .callUs a {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--text-color);
    }
 }
 

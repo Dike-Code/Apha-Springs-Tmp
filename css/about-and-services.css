@@ -6,9 +6,12 @@
    padding: 0;
 }
 
-.about-header .logo img {
+.about-header .logo {
    display: inline-block;
-   width: 100px;
+   font-family: "Ephesis", cursive;
+   font-weight: bolder;
+   font-size: 4rem;
+   color: var(--darkgrey);
 }
 
 .about-header .navbar li:hover,
@@ -43,7 +46,8 @@
    color: var(--text-color);
 }
 
-.about-header .navbar a {
+.about-header .navbar .logo,
+.about-header .navbar.fixed a {
    color: var(--darkgrey);
 }
 
