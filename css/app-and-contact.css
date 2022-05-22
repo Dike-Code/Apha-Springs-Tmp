@@ -8,7 +8,15 @@
    opacity: 0.399; */
 }
 
-.appHero .flex {
+.contactHero {
+   width: 100%;
+   height: 350px;
+   background: url("../images/ban_contact_over.png") no-repeat center
+      center/cover;
+}
+
+.appHero .flex,
+.contactHero .flex {
    flex-flow: column;
    align-items: center;
    height: 100%;
