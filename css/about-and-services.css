@@ -74,6 +74,13 @@
    height: 100%;
 }
 
+.home-about .about-content,
+.mv .mv-content {
+   background: #cee36e;
+   padding: 1rem;
+   height: 100%;
+}
+
 .aboutHero h1,
 .serviceHero h1 {
    font-size: 3rem;
@@ -105,37 +112,28 @@
    display: flex;
 }
 
-.mv .flex {
-   justify-content: space-between;
-   gap: 40px;
+.mv .grid {
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   align-items: stretch;
 }
 
 .mv .mv-content {
-   max-width: 600px;
+   background: #cee36e;
+   padding: 1rem;
+   height: 100%;
 }
 
 .mvImg {
    max-width: 600px;
+   height: 100%;
 }
 
-.about-team {
-   background: var(--lightgrey);
+.sv-header .s-head{
+   text-align: center;
 }
 
-.about-team .team-content {
-   width: 100%;
-   margin: auto;
-   background: var(--text-color);
-   padding: 2rem;
-}
-
-.service-team .team-content {
-   width: 100%;
-   margin: auto;
-   background: var(--lightgrey);
-   padding: 2rem;
-}
-
-.about-team h1 {
-   text-align: left;
+.sv-header p {
+   max-width: 600px;
+   text-align: center;
 }
