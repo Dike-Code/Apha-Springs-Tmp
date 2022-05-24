@@ -212,7 +212,8 @@
       padding: 20px;
    }
 
-   .navbar .container {
+   .navbar .container,
+   .navbar.fixed .container {
       padding-left: 5px;
    }
 
