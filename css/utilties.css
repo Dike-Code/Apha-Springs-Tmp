@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 :root {
-   --darkred: #b5b428;
+   --darkred: rgb(181, 180, 40);
    --text-color: #fff;
    /* Secondary */
    --darkgrey: #4c4c4c;

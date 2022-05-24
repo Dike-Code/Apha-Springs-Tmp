@@ -82,23 +82,23 @@
       position: fixed;
       top: 0;
       left: -1000px;
-      width: 100%;
+      width: 0;
       height: 100vh;
-      transition: 0.5s ease;
+      transition: 0.3s ease;
    }
 
    .navigation.show {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
+      width: 50%;
       height: 100vh;
       display: flex;
       flex-flow: column;
       justify-content: center;
       z-index: 99;
       background: var(--darkred);
-      transition: 0.5s ease;
+      transition: 0.3s ease;
    }
 
    .navbar ul {
@@ -112,6 +112,14 @@
 
    .about-header .navbar.fixed .logo {
       color: var(--darkgrey);
+   }
+
+   .home-about h1,
+   .service h1,
+   .whyChoose h1,
+   .cv-header h1,
+   .home-contact .formtxt h1 {
+      font-size: 1.5rem;
    }
 
    .about-header .navbar a,
@@ -150,18 +158,11 @@
    .cv .grid,
    .mv .grid,
    .home-contact .grid,
+   .home-contact-form .row50,
    .foot .grid {
       grid-template-columns: 1fr;
       justify-content: center;
       align-items: center;
-   }
-
-   .counterBox::before {
-      left: 39%;
-   }
-
-   .foot {
-      text-align: center;
    }
 
    .service .flex {
@@ -191,22 +192,50 @@
       height: 300px;
    }
 
-   .appBtn {
+   .appBtn,
+   .home-contact-form button[type="submit"] {
       width: 100%;
    }
 
-   @media (max-width: 768px) {
-      .container {
-         width: 100%;
-         padding: 20px;
-      }
-      .slides .content h1 {
-         max-width: 100%;
-         font-size: 2rem;
-      }
+   .foot {
+      text-align: center;
+   }
 
-      .slides .content h2 {
-         font-size: 1.1rem;
-      }
+   .foot .logo {
+      margin: auto;
+   }
+}
+
+@media (max-width: 768px) {
+   .container {
+      width: 100%;
+      padding: 20px;
+   }
+   .slides .content h1 {
+      max-width: 100%;
+      font-size: 2rem;
+   }
+
+   .slides .content h2 {
+      font-size: 1.1rem;
+   }
+
+   .counterBox::before {
+      left: 40%;
+   }
+}
+@media (max-width: 420px) {
+   .counterBox::before {
+      left: 33%;
+   }
+
+   .home-about h1,
+   .service h1,
+   .whyChoose h1,
+   .cv-header h1,
+   .home-contact .formtxt h1,
+   .cv-header h2 {
+      text-align: center;
+      font-size: 1.5rem;
    }
 }

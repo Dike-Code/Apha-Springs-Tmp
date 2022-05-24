@@ -13,7 +13,7 @@ html {
 body {
    font-family: "Open Sans", Tahoma, Geneva, Verdana, sans-serif;
    font-size: 18px;
-   line-height: 1.6;
+   line-height: 1.5;
 }
 
 a {
@@ -46,12 +46,17 @@ section {
    overflow: hidden;
 }
 
-.header .logo {
+/* .header .logo {
    display: inline-block;
    font-family: "Ephesis", cursive;
    font-weight: bolder;
    font-size: 4rem;
    color: #fff;
+} */
+
+.logo {
+   width: 150px;
+   height: 75px;
 }
 
 .header-container {
@@ -99,9 +104,9 @@ section {
 .navbar.fixed {
    position: fixed;
    z-index: 999;
+   width: 100%;
    top: 0;
    left: 0;
-   width: 100%;
    padding: 0.555rem 0;
    transition: 0.5s ease;
    transform: scale(1.1);
@@ -119,10 +124,6 @@ section {
 .navbar.fixed li:hover a {
    color: var(--darkred);
 }
-
-/* .navbar.fixed img {
-   width: 120px;
-} */
 
 .navbar .flex {
    justify-content: space-between;
