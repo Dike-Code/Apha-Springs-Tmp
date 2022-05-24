@@ -201,7 +201,7 @@
       text-align: center;
    }
 
-   .footlogo {
+   .footLogo {
       margin: auto;
    }
 }
@@ -222,6 +222,7 @@
    .footLogo {
       width: 100px;
       height: 50px;
+      margin: auto;
    }
 
    .slides .content h1 {
