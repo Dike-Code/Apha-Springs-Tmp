@@ -655,10 +655,8 @@ select:focus {
 }
 
 .footLogo {
-   display: inline-block;
-   font-family: "Ephesis", cursive;
-   font-weight: bolder;
-   font-size: 4rem;
+   width: 150px;
+   height: 75px;
 }
 .foot .grid {
    grid-template-columns: repeat(4, 1fr);
