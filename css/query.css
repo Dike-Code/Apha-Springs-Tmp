@@ -237,6 +237,10 @@
    .counterBox::before {
       left: 40%;
    }
+
+   .file input {
+      order: 1;
+   }
 }
 @media (max-width: 420px) {
    .counterBox::before {
