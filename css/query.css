@@ -273,7 +273,7 @@
 @media (max-width: 420px) {
    .slides .content h1 {
       max-width: 100%;
-      font-size: 3rem;
+      font-size: 2rem;
    }
 
    .counterBox::before {
