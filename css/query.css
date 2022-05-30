@@ -256,14 +256,18 @@
    .whyChoose h1,
    .cv-header h1,
    .home-contact .formtxt h1,
-   .cv-header h2,
-   .cv .card h1 {
+   .cv-header h2 {
       text-align: center;
       font-size: 1.5rem;
    }
 
    .cv .card {
-      text-align: justify;
+      text-align: left;
+   }
+
+   .cv .card h4,
+   .counterBox h4 {
+      font-size: 1.4rem;
    }
 
    .counterBox::before {
