@@ -23,7 +23,7 @@
             <div class="navbar">
                <div class="container flex">
                  <div class="logo">
-                <a href="index.html"><img src="./images/logo-org.png" alt="logo"></a>
+                <a href="index.html"><img src="./images/as-logo.png" alt="logo"></a>
              </div>
                   <div class="navigation">
                      <ul class="navlist">
@@ -33,26 +33,21 @@
                            <a href="service.html">Services</a>
                         </li>
                         <li class="navitems">
-                           <a href="faq.html">FAQs</a>
+                           <a href="faq.html">Project-Inquiry/Docs Submission</a>
                         </li>
                         <li><a href="contact.html">Contacts</a></li>
                      </ul>
                   </div>
                <div class="toggle">
                   <span class="bar"></span>
-                  <span class="bar"></span>
+                  <span class="bar" id="bars"></span>
                   <span class="bar"></span>
              </div>
                </div>
          </div>
          <div class="appHero">
            <div class="container flex">
-             <h1>FAQs</h1>
-             <p>
-               On this page you will find information and instructions on how and ways to submit application for the services we offer.
-
-              Follow instructions below carefully and provide information and the necessary documents to process your application.
-            </p>
+             <h1>Project-Inquiry & Document Submission</h1>
            </div>
          </div>
       </section>
@@ -61,18 +56,15 @@
         <div class="container">
           <div class="contentBox">
             <h2 class="label lab1">
-              Application Checklist.
+              Project Inquiry Checklist
             </h2>
             <div class="content active">
-               <ol>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laudantium ex minus.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laudantium ex minus.</li>
-                  <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit laudantium ex minus.</li>
-
-                </ol>
+               <p style="font-weight:bold ; padding:30px 0;">
+                Please complete the form below. If you have undergone consultation with any of our consultants, kindly indicate in the text box below, or type “NEW” and a consultant with contact you.
+              </p>
             </div>
          </div>
-         <div class="contentBox">
+         <!-- <div class="contentBox">
             <h2 class="label lab2">
                Application Procedures
             </h2>
@@ -82,20 +74,19 @@
                   
                </p>
             </div>
-         </div>
+         </div> -->
         </div>
      </section>
 
      <section class="app-form">
        <div class="container app-form-con">
           <form action="" class="form1">
-            <h1>1. PERSONAL DATA: (Please Ensure That Your Legal Name Matches Your Government Issued ID)</h1>
             <div class="formShowcase column">
-              <h3>Legal Name</h3>
+              <h3>Legal Details *</h3>
               <div class="appForm-Content">
                 <div class="form-control select-box">
                   <label for="name">Prefix</label><br/>
-                  <select name="Prefix" id="">
+                  <select name="Prefix" id="select">
                     <option value=""></option>
                     <option value="Mr">Mr.</option>
                     <option value="Mr">Mrs.</option>
@@ -127,7 +118,7 @@
                   <input type="email" name="app-email">
                 </div>
               </div>
-              <h3>Date of Birth</h3>
+              <h3>Date of Birth *</h3>
               <div class="appForm-Content">
                 <div class="form-control">
                   <select name="Month" id="">
@@ -216,7 +207,7 @@
                   <input type="text">
                 </div>
                 <div class="form-control">
-                  <label for="name">country</label><br/>
+                  <label for="name">Country</label><br/>
                   <select name="country" id="country">
                       <option value="Afganistan">Afghanistan</option>
                       <option value="Albania">Albania</option>
@@ -482,7 +473,7 @@
                   <label for="other">Other</label>
                 </div>
               </div>
-              <h3>Home Address or Permanent Addresss</h3>
+              <h3>Home Address or Permanent Addresss *</h3>
               <div class="appForm-Content">
                 <div class="form-control">
                   <label for="street-address">Street Address</label><br/>
@@ -493,7 +484,7 @@
                   <input type="text" name="city">
                 </div>
               </div>
-              <h3>Legal Documents</h3>
+              <h3>Legal Documents *</h3>
               <h4 style="margin:10px auto;">Please submit the nesccesary docs below:</h4>
               <div class="appForm-Content">
                 <div class="form-control file">
@@ -509,22 +500,13 @@
                   <input type="file" name="file">
                 </div>
               </div>
-              <h3>How you heard about us</h3>
-              <div class="checkbox">
-                <div class="form-control">
-                  <label for="Google">Google</label><br/>
-                  <input type="checkbox" name="file">
-                </div>
-                <div class="form-control">
-                  <label for="Social Media">Social Media</label><br/>
-                  <input type="checkbox" name="file">
-                </div>
-
-                <div class="form-control">
-                  <label for="Others">Others</label><br/>
-                  <input type="checkbox" name="file">
-                </div>
+              <div class="text-box form-control">
+                <textarea name="Comment" id="Cmt" placeholder="New"></textarea>
               </div>
+
+              <p>
+                This form helps students with all the necessary information like country, career, courses, university selection, the application process, essays, LOPs, LORs
+              </p>
               <button type="submit" class="appBtn">Submit</button>
             </div>
           </form>
@@ -537,7 +519,7 @@
       <footer class="foot">
          <div class="container grid">
           <div class="footLogo">
-            <a href="index.html"><img src="./images/logo-org.png" alt="logo"></a>
+            <a href="index.html"><img src="./images/as-logo.png" alt="logo"></a>
          </div>
             <div class="countact-info">
                <h3>Contact Information</h3>

@@ -58,5 +58,3 @@ prevBtn.addEventListener("click", function () {
 if (auto) {
    slideInterv = setInterval(nextButton, interv);
 }
-
-

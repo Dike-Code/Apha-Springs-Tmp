@@ -69,6 +69,21 @@
       transition: 0.5s ease;
    }
 
+   .toggle.close .bar:nth-child(1) {
+      transform: translateY(5px) rotate(-45deg);
+      transition: 0.5s;
+      opacity: 1;
+   }
+   .toggle.close .bar:nth-child(2) {
+      transform: translateY(-4px) rotate(45deg);
+      transition: 0.5s;
+      opacity: 1;
+   }
+   .toggle.close .bar:nth-child(3) {
+      transform: translateY(-15px) rotate(90deg);
+      opacity: 0;
+   }
+
    .toggle .bar.toggleW {
       background: #fff;
       width: 40px;
@@ -97,7 +112,7 @@
       flex-flow: column;
       justify-content: center;
       z-index: 99;
-      background: var(--darkred);
+      background: var(--primary-color);
       transition: 0.3s ease;
    }
 
@@ -214,7 +229,7 @@
 
    .logo {
       position: absolute;
-      left: -30px;
+      left: -25px;
       width: 100px;
       height: 50px;
    }
@@ -227,33 +242,39 @@
 
    .slides .content h1 {
       max-width: 100%;
-      font-size: 2rem;
+      font-size: 3rem;
    }
 
    .slides .content h2 {
       font-size: 1.1rem;
    }
 
-   .counterBox::before {
-      left: 40%;
-   }
-
-   .file input {
-      order: 1;
-   }
-}
-@media (max-width: 420px) {
-   .counterBox::before {
-      left: 33%;
-   }
-
    .home-about h1,
    .service h1,
+   .service h2,
    .whyChoose h1,
    .cv-header h1,
    .home-contact .formtxt h1,
    .cv-header h2 {
       text-align: center;
       font-size: 1.5rem;
+   }
+
+   .cv .card {
+      text-align: center;
+   }
+
+   .counterBox::before {
+      left: 40%;
+   }
+}
+@media (max-width: 420px) {
+   .slides .content h1 {
+      max-width: 100%;
+      font-size: 3rem;
+   }
+
+   .counterBox::before {
+      left: 33%;
    }
 }

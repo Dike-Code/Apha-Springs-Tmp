@@ -16,7 +16,7 @@
 
 .about-header .navbar li:hover,
 .serviceHero .navbar li:hover {
-   background: var(--darkred);
+   background: var(--secondary-color);
    border: 1px solid #fff;
 }
 
@@ -37,7 +37,7 @@
 
 .about-header .navbar.fixed li:hover,
 .serviceHero .navbar.fixed li:hover {
-   background: var(--darkred);
+   background: var(--primary-color);
    border: 1px solid #fff;
 }
 
@@ -56,7 +56,7 @@
 .aboutHero {
    width: 100%;
    height: 350px;
-   background: url("../images/about.jpg") no-repeat center center/cover;
+   background: url("../images/about-page-bg.jpg") no-repeat center center/cover;
    transition: 0.5s ease;
    opacity: 0.399;
 }
@@ -103,7 +103,7 @@
 }
 .relative-links a:hover {
    margin: auto 20px;
-   color: var(--darkred);
+   color: var(--primary-color);
 }
 
 .mv {
@@ -129,7 +129,7 @@
    height: 100%;
 }
 
-.sv-header .s-head{
+.sv-header .s-head {
    text-align: center;
 }
 

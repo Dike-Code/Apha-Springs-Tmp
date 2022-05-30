@@ -18,7 +18,7 @@ const year = document.querySelector("#year");
 
 const label1 = document.querySelector(".lab1");
 
-const label2 = document.querySelector(".lab2");
+// const label2 = document.querySelector(".lab2");
 
 const mobMenu = document.querySelector(".toggle");
 
@@ -30,6 +30,7 @@ let speed = 600;
 
 mobMenu.addEventListener("click", (e) => {
    navBar.classList.toggle("show");
+   mobMenu.classList.toggle("close")
    bar.forEach((bars) => {
       bars.classList.toggle("toggleW");
    });
@@ -106,9 +107,9 @@ accordin.forEach((accordins) => {
 label1.addEventListener("click", function () {
    label1.classList.toggle("active");
 });
-label2.addEventListener("click", function () {
-   label2.classList.toggle("active");
-});
+// label2.addEventListener("click", function () {
+//    label2.classList.toggle("active");
+// });
 
 // Year DropDown
 (function () {
