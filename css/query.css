@@ -76,6 +76,7 @@
    }
    .toggle.close .bar:nth-child(2) {
       transform: translateY(-4px) rotate(45deg);
+      background: #2b6a00 !important;
       transition: 0.5s;
       opacity: 1;
    }
@@ -255,13 +256,14 @@
    .whyChoose h1,
    .cv-header h1,
    .home-contact .formtxt h1,
-   .cv-header h2 {
+   .cv-header h2,
+   .cv .card h1 {
       text-align: center;
       font-size: 1.5rem;
    }
 
    .cv .card {
-      text-align: center;
+      text-align: justify;
    }
 
    .counterBox::before {

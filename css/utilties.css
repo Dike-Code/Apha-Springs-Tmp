@@ -56,10 +56,6 @@
    color: var(--primary-color);
 }
 
-#bars {
-   background: #2b6a00 !important;
-}
-
 * ::selection {
    background: var(--secondary-color);
 }
