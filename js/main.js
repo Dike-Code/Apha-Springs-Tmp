@@ -30,7 +30,7 @@ let speed = 600;
 
 mobMenu.addEventListener("click", (e) => {
    navBar.classList.toggle("show");
-   mobMenu.classList.toggle("close")
+   mobMenu.classList.toggle("close");
    bar.forEach((bars) => {
       bars.classList.toggle("toggleW");
    });
@@ -38,7 +38,7 @@ mobMenu.addEventListener("click", (e) => {
 
 window.addEventListener("scroll", function () {
    // sticky navbar
-   nav.classList.toggle("fixed", window.scrollY > 0);
+   nav.classList.toggle("fixed", window.scrollY > 4);
 
    // Animations
    up.forEach((ups) => {
