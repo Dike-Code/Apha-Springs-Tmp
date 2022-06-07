@@ -27,6 +27,12 @@
    font-weight: 400;
 }
 
+h1,
+h2,
+h3 {
+   font-weight: 700;
+}
+
 .container {
    width: 90%;
    max-width: 1350px;

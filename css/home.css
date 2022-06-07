@@ -165,7 +165,7 @@ section {
    text-align: center;
 }
 .slides .content h2 {
-   font-size: 2.5rem;
+   font-size: 1.5rem;
    font-weight: 500;
    line-height: 1.3;
    text-transform: capitalize;
@@ -223,12 +223,17 @@ section {
 }
 
 .slides:nth-child(4) {
-   background: url("../images/stu-slider-bg.jpg") no-repeat center center/cover;
+   background: url("../images/uni-bg0.jpg") no-repeat center center/cover;
 }
 
 .slides:nth-child(5) {
-   background: url("../images/1680x683\ slider1.jpg") no-repeat center
-      center/cover;
+   background: url("../images/stu-slider-bg.jpg") no-repeat center center/cover;
+}
+.slides:nth-child(6) {
+   background: url("../images/gt-slider.jpg") no-repeat center center/cover;
+}
+.slides:nth-child(7) {
+   background: url("../images/uni-bg1.jpg") no-repeat center center/cover;
 }
 
 .nextBtn {
@@ -304,14 +309,21 @@ section {
 }
 
 .home-about h1 {
-   font-size: 2rem;
+   font-size: 1.5rem;
    margin-bottom: 30px;
    text-transform: uppercase;
 }
 
+.about-content {
+   width: 100%;
+   height: 100%;
+   background: #cee36e;
+   padding: 1rem;
+}
+
 .aboutImg {
    max-width: 600px;
-   height: 100%;
+   height: 350px;
 }
 
 /* Services we offer styling */
@@ -323,8 +335,7 @@ section {
 }
 
 .service h1 {
-   font-size: 2rem;
-   padding: 2rem;
+   font-size: 1.5rem;
    text-transform: uppercase;
 }
 
@@ -335,7 +346,7 @@ section {
 }
 
 .service .card {
-   padding-bottom: 4rem;
+   padding-bottom: 2rem;
    transform: scale(0.99);
    border: 3px solid var(--lightgrey);
    transition: 0.5s ease;
@@ -350,7 +361,7 @@ section {
 }
 
 .service-content h2 {
-   font-size: 1.5rem;
+   font-size: 1.1rem;
    text-transform: uppercase;
    text-align: center;
    margin-bottom: 10px;
@@ -420,29 +431,29 @@ section {
 
 .whyChoose .grid {
    grid-template-columns: repeat(2, 1fr);
-   align-items: flex-start;
    /* grid-gap: 2rem; */
-}
-
-.whyChoose h1 {
-   font-size: 2rem;
-   margin-bottom: 30px;
-   text-transform: uppercase;
 }
 
 .why-content {
    background: #cee36e;
    padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: center;
+   width: 100%;
    height: 100%;
 }
 
-.whyImg {
-   height: 100%;
+.whyChoose h1 {
+   width: inherit;
+   font-size: 1.5rem;
+   /* margin-bottom: 20px; */
+   text-transform: uppercase;
 }
-.whyPara {
-   display: flex;
-   align-items: center;
-   gap: 2rem;
+
+.whyImg {
+   height: 350px;
 }
 
 /* cv styling */
@@ -459,7 +470,7 @@ section {
 
 .cv-header h1 {
    text-transform: uppercase;
-   font-size: 2rem;
+   font-size: 1.5rem;
    font-weight: 700;
    color: var(--text-color);
 }
@@ -492,7 +503,7 @@ section {
 
 .cv-items h4 {
    text-transform: uppercase;
-   font-size: 2rem;
+   font-size: 1.1rem;
    color: var(--darkgrey);
 }
 
@@ -517,6 +528,7 @@ section {
 
 .counterBox {
    width: 100%;
+   padding: 2rem 0;
    position: relative;
    background: var(--text-color);
 }
@@ -534,24 +546,33 @@ section {
 
 .counterBox .flex {
    justify-content: space-between;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
 }
 
 .counter {
-   max-width: 500px;
-   margin: 2rem;
+   margin: 0 2rem;
    text-align: center;
+}
+
+.counterBox .card {
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   width: 350px;
+   height: 200px;
+   box-shadow: 0 3px 10px #2a2a2a;
 }
 
 .counter span {
    display: block;
-   font-size: 3rem;
+   font-size: 2rem;
    font-weight: 500;
    color: var(--darkgrey);
 }
 
 .counter h4 {
-   font-size: 1.5rem;
+   font-size: 1.1rem;
    font-weight: 700;
    text-transform: uppercase;
    color: var(--secondary-color);
@@ -571,7 +592,7 @@ section {
 
 .home-contact .formtxt h1 {
    text-transform: uppercase;
-   font-size: 2rem;
+   font-size: 1.5rem;
    font-weight: 500;
    color: #fff;
 }
@@ -658,6 +679,11 @@ select:focus {
 .foot .grid {
    grid-template-columns: repeat(4, 1fr);
    gap: 40px;
+}
+
+.foot .contact-info {
+   padding: 0.5rem;
+   border-right: 1px solid #fff;
 }
 .foot h3 {
    text-transform: uppercase;
