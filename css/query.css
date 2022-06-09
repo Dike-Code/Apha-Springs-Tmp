@@ -25,6 +25,8 @@
       font-size: 2rem;
    }
 
+   .aboutHero h1,
+   .serviceHero h1,
    .appHero h1,
    .contactHero h1 {
       font-size: 1.5rem;
@@ -223,6 +225,7 @@
 
    .mvImg {
       order: 1;
+      height: auto;
    }
 
    .mvImg,
