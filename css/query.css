@@ -77,7 +77,6 @@
    }
    .toggle.close .bar:nth-child(2) {
       transform: translateY(-4px) rotate(45deg);
-      background: #2b6a00 !important;
       transition: 0.5s;
       opacity: 1;
    }
@@ -160,6 +159,16 @@
       width: 90%;
       padding: 0 20px;
       height: 100%;
+   }
+
+   .home-about h1,
+   .service h1,
+   .whyChoose h1,
+   .cv-header h1,
+   .cv-header h2,
+   .home-contact .formtxt h1 {
+      text-align: center;
+      font-size: 1.1rem;
    }
 
    .newsletter .flex,
@@ -274,18 +283,10 @@
       font-size: 1.1rem;
    }
 
-   .home-about h1,
-   .service h1,
-   .whyChoose h1,
-   .cv-header h1,
-   .home-contact .formtxt h1 {
-      text-align: center;
-      font-size: 1.1rem;
-   }
-
    .cv .card {
       text-align: center;
    }
+
    .cv-header h2 {
       font-size: 1rem;
       text-align: center;
