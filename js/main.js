@@ -110,7 +110,7 @@ function loadPage() {
       pageLoad.style.opacity = "0";
       pageLoad.style.zIndex = "-1";
       mainCont.style.opacity = "1";
-   }, 5000);
+   }, 4000);
 }
 loadPage();
 
