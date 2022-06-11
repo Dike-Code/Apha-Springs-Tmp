@@ -15,10 +15,15 @@
    color: var(--darkgrey);
 } */
 
+.about-header .navbar .logo,
+.about-header .navbar a,
+.about-header .navbar.fixed a {
+   color: var(--darkgrey);
+}
+
 .about-header .navbar li:hover,
 .serviceHero .navbar li:hover {
    background: var(--secondary-color);
-   border: 1px solid #fff;
 }
 
 .about-header .navbar li:hover a,
@@ -34,23 +39,6 @@
 
 .about-header .navbar.fixed .flex {
    height: 100%;
-}
-
-.about-header .navbar.fixed li:hover,
-.serviceHero .navbar.fixed li:hover {
-   background: var(--primary-color);
-   border: 1px solid #fff;
-}
-
-.about-header .navbar.fixed li:hover a,
-.serviceHero .navbar.fixed li:hover a {
-   color: var(--text-color);
-}
-
-.about-header .navbar .logo,
-.about-header .navbar a,
-.about-header .navbar.fixed a {
-   color: var(--darkgrey);
 }
 
 /* About-Hero */

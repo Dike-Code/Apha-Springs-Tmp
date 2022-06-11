@@ -4,6 +4,7 @@
  * @format
  */
 
+/*Hub*/
 @media (max-width: 1100px) {
    body {
       font-size: 16px;
@@ -33,7 +34,7 @@
       letter-spacing: 0;
    }
 }
-
+/* Tablets */
 @media (max-width: 968px) {
    .header .logo,
    .about-header .logo {
@@ -256,8 +257,19 @@
       border: 0;
       border-bottom: 1px solid #fff;
    }
-}
 
+   .loader .load::before {
+      width: 60px;
+      height: 60px;
+      border: 2px solid var(--darkgrey);
+      border-top: 2px solid var(--primary-color);
+   }
+
+   .load h5 {
+      font-size: 1rem;
+   }
+}
+/* i-pad */
 @media (max-width: 768px) {
    .container {
       width: 100%;
@@ -304,6 +316,7 @@
       left: 40%;
    }
 }
+/* i-phones */
 @media (max-width: 420px) {
    .slides .content h1 {
       max-width: 100%;

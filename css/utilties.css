@@ -89,11 +89,69 @@ h3 {
    opacity: 1;
 }
 
+.loader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 999;
+   background: #f5f5f5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 0.5s ease-in-out;
+   /* opacity: 0; */
+}
+
+.loader .load {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100px;
+   height: 100px;
+   /* background: transparent;
+   border: 4px solid var(--darkgrey);
+   border-top: 4px solid var(--primary-color); */
+   border-radius: 50%;
+   position: relative;
+}
+
+.loader .load::before {
+   position: absolute;
+   content: "";
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100px;
+   height: 100px;
+   background: transparent;
+   border: 4px solid var(--darkgrey);
+   border-top: 4px solid var(--primary-color);
+   border-radius: 50%;
+   animation: rotate 0.888s linear infinite;
+}
+
+.load h5 {
+   font-family: "Ephesis", Helvetica, sans-serif;
+   font-size: 1.1rem;
+   color: var(--darkgrey);
+}
+
 @keyframes slide {
    from {
       transform: translateY(-150px);
    }
    to {
       transform: translateY(0);
+   }
+}
+
+@keyframes rotate {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
    }
 }

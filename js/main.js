@@ -26,6 +26,10 @@ const bar = document.querySelectorAll(".bar");
 
 const navBar = document.querySelector(".navigation");
 
+const mainCont = document.querySelector(".main");
+
+const pageLoad = document.querySelector(".loader");
+
 let speed = 600;
 
 mobMenu.addEventListener("click", (e) => {
@@ -89,6 +93,7 @@ window.addEventListener("scroll", function () {
    });
 });
 
+// aboutMe and Service Opacity Fade in event
 window.addEventListener("DOMContentLoaded", () => {
    aboutHero.style.opacity = "1";
 });
@@ -97,6 +102,19 @@ window.addEventListener("DOMContentLoaded", () => {
    serviceHero.style.opacity = "1";
 });
 
+// Page-load window event
+window.addEventListener("onload", loadPage);
+
+function loadPage() {
+   setTimeout(() => {
+      pageLoad.style.opacity = "0";
+      pageLoad.style.zIndex = "-1";
+      mainCont.style.opacity = "1";
+   }, 5000);
+}
+loadPage();
+
+// Accordions
 accordin.forEach((accordins) => {
    accordins.addEventListener("click", function () {
       this.classList.toggle("active");
