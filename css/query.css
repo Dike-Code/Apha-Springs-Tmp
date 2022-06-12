@@ -254,7 +254,7 @@
    }
 
    .foot {
-      /* text-align: center; */
+      text-align: center;
    }
 
    .footLogo {
@@ -267,10 +267,13 @@
       border-bottom: 1px solid #fff;
    }
 
-   /* .foot .connect::before {
+   .foot .connect::before {
       width: 100%;
+      height: 1px;
+      bottom: -5px;
+      margin: 0.3rem auto;
       left: 0;
-   } */
+   }
 
    .loader .load::before {
       width: 60px;
