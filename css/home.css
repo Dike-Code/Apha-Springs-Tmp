@@ -794,6 +794,20 @@ select:focus {
    text-transform: uppercase;
    color: #fff;
 }
+
+.foot .connect {
+   position: relative;
+   padding: 0.1rem 0;
+}
+.foot .connect::before {
+   position: absolute;
+   content: "";
+   width: 30%;
+   height: 3px;
+   bottom: -6px;
+   background: var(--primary-color);
+}
+
 .foot p,
 .foot a {
    color: var(--text-color);
