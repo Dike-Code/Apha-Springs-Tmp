@@ -803,6 +803,7 @@ select:focus {
    position: absolute;
    content: "";
    width: 30%;
+   margin: auto;
    height: 3px;
    bottom: -6px;
    background: var(--primary-color);

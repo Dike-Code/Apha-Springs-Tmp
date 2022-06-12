@@ -267,6 +267,11 @@
       border-bottom: 1px solid #fff;
    }
 
+   .foot .connect::before {
+      width: 100%;
+      left: 0;
+   }
+
    .loader .load::before {
       width: 60px;
       height: 60px;
