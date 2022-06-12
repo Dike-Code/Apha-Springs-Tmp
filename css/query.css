@@ -132,7 +132,7 @@
    }
 
    .navbar ul li a {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
    }
 
    .about-header .navbar.fixed .logo {
@@ -146,6 +146,15 @@
    .home-contact .formtxt h1 {
       font-size: 1.1rem;
       text-align: center;
+   }
+
+   .navbar li:hover a {
+      color: var(--text-color);
+   }
+
+   .about-header .navbar li:hover a,
+   .serviceHero .navbar li:hover a {
+      color: var(--text-color);
    }
 
    .about-header .navbar a,

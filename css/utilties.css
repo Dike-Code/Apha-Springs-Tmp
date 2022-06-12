@@ -5,10 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 :root {
    /* primary */
-   --primary-color: #00a5ba;
+   --primary-color: #b5cb0c;
    --text-color: #fff;
    /* Secondary */
-   --secondary-color: #1fcfe7;
+   --secondary-color: #4aef3b;
    --darkgrey: #4c4c4c;
    --lightgrey: rgba(216, 211, 211, 0.5);
 }

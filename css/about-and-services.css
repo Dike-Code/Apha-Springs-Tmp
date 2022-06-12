@@ -28,7 +28,7 @@
 
 .about-header .navbar li:hover a,
 .serviceHero .navbar li:hover a {
-   color: var(--text-color);
+   color: var(--darkgrey);
 }
 
 .about-header .navbar.fixed {
