@@ -224,7 +224,7 @@ section {
 }
 
 .slides:nth-child(3) {
-   background: url('../images/edu-slider-bg.jpg') no-repeat center center/cover;
+   background: url('../images/auditoriumbg.png') no-repeat center center/cover;
 }
 
 .slides:nth-child(4) {
@@ -232,13 +232,19 @@ section {
 }
 
 .slides:nth-child(5) {
+   background: url('../images/uni-bg1.jpg') no-repeat center center/cover;
+}
+
+.slides:nth-child(6) {
+   background: url('../images/univer-slider-bg.jpg') no-repeat center
+      center/cover;
+}
+
+.slides:nth-child(7) {
    background: url('../images/stu-slider-bg.jpg') no-repeat center center/cover;
 }
-.slides:nth-child(6) {
+.slides:nth-child(8) {
    background: url('../images/gt-slider.jpg') no-repeat center center/cover;
-}
-.slides:nth-child(7) {
-   background: url('../images/uni-bg1.jpg') no-repeat center center/cover;
 }
 
 .nextBtn {
